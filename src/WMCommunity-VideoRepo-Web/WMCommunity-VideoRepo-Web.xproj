@@ -6,16 +6,19 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>0086ef10-6923-49bd-9afa-bf8bb9769097</ProjectGuid>
-    <RootNamespace>WMCommunity_VideoRepo_WebApi</RootNamespace>
+    <ProjectGuid>1e329c3a-05b9-4299-96d7-87486a03c87f</ProjectGuid>
+    <RootNamespace>WMCommunity_VideoRepo_Web</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
-    <WebProject_DirectoryAccessLevelKey>0</WebProject_DirectoryAccessLevelKey>
-    <ApplicationInsightsResourceId>/subscriptions/48dfe6e0-5c99-4c00-8fc1-797fa4c33306/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/WMCommunity-VideoRepo-WebApi</ApplicationInsightsResourceId>
+    <ApplicationInsightsResourceId>/subscriptions/48dfe6e0-5c99-4c00-8fc1-797fa4c33306/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/WMCommunity-VideoRepo-Web</ApplicationInsightsResourceId>
   </PropertyGroup>
+  <ItemGroup>
+    <DnxInvisibleContent Include="bower.json" />
+    <DnxInvisibleContent Include=".bowerrc" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\DotNet.Web\Microsoft.DotNet.Web.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>
